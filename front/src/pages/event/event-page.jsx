@@ -28,27 +28,27 @@ const EventPage = () => {
   };
   const showEventInfoModal = isAdmin
     ? (event) => {
-        setModalContent(
-          <EventEdit event={event} closeModal={handleClose}></EventEdit>
-        );
-        setModalOptions({
-          ...modalOptions,
-          backdrop: 'static',
-          keyboard: false,
-        });
-        setModalActive(true);
-      }
+      setModalContent(
+        <EventEdit event={event} closeModal={handleClose}></EventEdit>
+      );
+      setModalOptions({
+        ...modalOptions,
+        backdrop: 'static',
+        keyboard: false,
+      });
+      setModalActive(true);
+    }
     : (event) => {
-        setModalContent(
-          <EventInfo
-            event={event}
-            isAuth={isAuth}
-            closeModal={handleClose}
-          ></EventInfo>
-        );
-        setModalOptions({ ...modalOptions, backdrop: true, keyboard: true });
-        setModalActive(true);
-      };
+      setModalContent(
+        <EventInfo
+          event={event}
+          isAuth={isAuth}
+          closeModal={handleClose}
+        ></EventInfo>
+      );
+      setModalOptions({ ...modalOptions, backdrop: true, keyboard: true });
+      setModalActive(true);
+    };
   const showEventRegisteredModal = (event) => {
     setModalContent(<EventInfoRegistered event={event}></EventInfoRegistered>);
     setModalOptions({ ...modalOptions, backdrop: true, keyboard: true });
