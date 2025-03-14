@@ -43,9 +43,9 @@ const RegisterPage = () => {
     <div className='main-page mx-auto'>
       <div className='container mt-5 pb-5'>
         <div className='row'>
-          <div className='border pt-3'>
-            <h3 className='main-page__title text-center pt-3'>Регистрация</h3>
-            <form onSubmit={handleSubmit(onSubmit)} className='mt-4'>
+          <h3 className='main-page__title text-center pt-3'>Регистрация</h3>
+          <div className='auth-form pb-4'>
+            <form onSubmit={handleSubmit(onSubmit)} className='mt-4 form-as'>
               <div>
                 <input
                   {...register('secondName', {
@@ -219,15 +219,15 @@ const RegisterPage = () => {
                 </div>
               )}
               <div className='mt-3 d-flex justify-content-end'>
-                <button className='btn btn-primary w-100'>
+                <button className='auth-form-btn'>
                   Зарегистрироваться
                 </button>
               </div>
             </form>
-            <p className='text-center mt-3'>
-              Уже есть аккаунт? <Link to='/login'>Войти</Link>
-            </p>
           </div>
+          <p className='text-center mt-3'>
+            Уже есть аккаунт? <Link to='/login'>Войти</Link>
+          </p>
         </div>
       </div>
       <Modal

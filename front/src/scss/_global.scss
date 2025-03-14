@@ -3,8 +3,11 @@
 .school-input {
   background-color: var(--input-bg);
   font-size: 1.2rem;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 0.25rem 1.25rem;
+  border-color: #ffffff00;
+  min-height: 65px;
+  max-height: 80px;
 }
 
 .school-checkbox-container {

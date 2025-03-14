@@ -97,9 +97,9 @@ const EventPage = () => {
       </Modal>
       <div className='event-page mx-auto container mt-4'>
         <div className='control-bar d-flex justify-content-between pe-4'>
-          <Dropdown style={{ width: '180px' }}>
+          <Dropdown style={{ width: '180px', marginRight: '10px' }}>
             <Dropdown.Toggle variant='light' style={{ width: '100%' }}>
-              Сортировка
+              фильтры
             </Dropdown.Toggle>
             <Dropdown.Menu style={{ width: '180px' }}>
               <Dropdown.Item

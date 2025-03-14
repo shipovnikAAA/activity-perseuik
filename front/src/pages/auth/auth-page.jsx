@@ -31,9 +31,9 @@ const AuthPage = () => {
     <div className='main-page mx-auto'>
       <div className='container mt-5'>
         <div className='row'>
-          <div className='border pb-4'>
-            <h3 className='main-page__title text-center pt-3'>Вход</h3>
-            <form onSubmit={handleSubmit(onSubmit)} className='mt-4'>
+          <h3 className='main-page__title text-center pt-3'>Вход</h3>
+          <div className='auth-form pb-4'>
+            <form onSubmit={handleSubmit(onSubmit)} className='mt-4 form-as'>
               <div>
                 <input
                   {...register('username', {
@@ -42,7 +42,7 @@ const AuthPage = () => {
                   id='login-email'
                   type='text'
                   className='school-input form-control'
-                  placeholder='E-mail...'
+                  placeholder='адрес электронной почты'
                 />
                 {errors.username && (
                   <div className='ms-2 invalid-feedback d-block'>
@@ -58,7 +58,7 @@ const AuthPage = () => {
                   id='login-pass'
                   type='password'
                   className='school-input form-control'
-                  placeholder='Пароль...'
+                  placeholder='пароль'
                 />
                 {errors.password && (
                   <div className='ms-2 invalid-feedback d-block'>
@@ -67,13 +67,13 @@ const AuthPage = () => {
                 )}
               </div>
               <div className='mt-3 d-flex justify-content-end'>
-                <button className='btn btn-primary w-100'>Войти</button>
+                <button className='auth-form-btn'>войти</button>
               </div>
             </form>
-            <p className='text-center mt-3'>
-              Нет аккаунта? <Link to='/register'>Зарегистрироваться</Link>
-            </p>
           </div>
+          <p className='text-center mt-3'>
+            Нет аккаунта? <Link to='/register'>Зарегистрироваться</Link>
+          </p>
         </div>
       </div>
       <Toast

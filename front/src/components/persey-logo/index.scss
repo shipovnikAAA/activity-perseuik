@@ -1,0 +1,57 @@
+.persey-logo {
+  height: var(--persey-logo-height, 80px);
+  max-width: var(--persey-logo-width, 100px);
+  padding: 4px 20px;
+  box-sizing: border-box;
+  font-family: 'Poximanova', sans-serif;
+  font-weight: 200;
+  color: #fff;
+  background-color: var(--persey-logo-bg);
+
+  &__image {
+    max-height: 100%;
+  }
+
+  &__titles {
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    letter-spacing: 1px;
+    margin-top: 3px;
+    font-size: 0.875rem;
+  }
+
+  &__full-name {
+    margin-top: 3px;
+    line-height: 0.7;
+    font-size: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .persey-logo {
+    width: 100px;
+    &__title {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+
+.button-like {
+  display: inline-block; /* Чтобы элемент вёл себя как кнопка */
+  padding: 10px 20px; /* Отступы для создания кнопки */
+  background-color: #ffffff; /* Фоновый цвет кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 20px; /* Закругление углов */
+  text-align: center; /* Центрируем текст */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.button-like:hover {
+  background-color: #ffffff96; /* Цвет фона при наведении */
+  color: #000000;
+}

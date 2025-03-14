@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import IstuLogo from '../istu-logo/istu-logo';
+import PerseyLogo from '../persey-logo/persey-logo';
 import authStore from '../../store/auth';
 
 import './index.scss';
@@ -21,7 +21,7 @@ const NavbarLink = ({ className }) => {
       <Navbar.Brand>
         <Link to='/'>
           <div className='header__logo flex-grow-1'>
-            <IstuLogo />
+            <PerseyLogo />
           </div>
         </Link>
       </Navbar.Brand>
@@ -30,19 +30,19 @@ const NavbarLink = ({ className }) => {
         <Nav className='ms-auto'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0 d-flex'>
             <li className='nav-item'>
-              <Link className='navbar__link' to='/'>
-                Мероприятия
+              <Link className='navbar__link button-like' to='/'>
+                  мероприятия
               </Link>
             </li>
             <li className='nav-item'>
               {!isAuth && (
-                <Link className='navbar__link' to='/login'>
-                  Вход/Регистрация
+                <Link className='navbar__link button-like' to='/login'>
+                  войти
                 </Link>
               )}
               {isAuth && (
                 <a
-                  className='navbar__link'
+                  className='navbar__link button-like'
                   onClick={logout}
                 >
                   Выйти

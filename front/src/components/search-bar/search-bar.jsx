@@ -9,19 +9,21 @@ const SearchBar = () => {
   };
 
   return (
-    <div className='input-group mb-3' style={{ display: 'contents' }}>
+    <div className='input-group mb-3'>
+
       <input
         type='text'
         placeholder=''
         className='form-control'
         onChange={handleSearchChange}
         defaultValue=''
+        style={{ width: '90%' }} // Занимает оставшееся пространство
       />
       <div className='input-group-prepend'>
         <span
           className='input-group-text'
           id='basic-addon1'
-          style={{ height: '100%' }}
+          style={{ height: '100%', flexGrow: 1 }}
         >
           <FontAwesomeIcon icon='fa-solid fa-magnifying-glass' />
         </span>
