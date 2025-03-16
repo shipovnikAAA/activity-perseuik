@@ -24,6 +24,7 @@ public class Schedule {
     private String startTime;
     private String endTime;
     private String cabinetNumber;
+    // private String location;
 
     public Schedule(StudyActivity activity, String startEventDate, String endEventDate,
                     String startTime, String endTime, String cabinetNumber) {
@@ -33,6 +34,7 @@ public class Schedule {
         this.startTime = startTime;
         this.endTime = endTime;
         this.cabinetNumber = cabinetNumber;
+        // this.location = location;
     }
 
     @Override
@@ -44,6 +46,7 @@ public class Schedule {
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 ", cabinetNumber='" + cabinetNumber + '\'' +
+                // ", location='" + location + '\'' +
                 '}';
     }
 }

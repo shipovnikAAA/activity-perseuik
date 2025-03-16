@@ -20,5 +20,6 @@ public class StudyActivityDto {
     private Integer maxParticipants;
     //Enum ActivityType
     private String activityType;
+    private String location;
     private Long[] trajectoriesId;
 }

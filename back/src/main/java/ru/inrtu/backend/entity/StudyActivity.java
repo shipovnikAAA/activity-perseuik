@@ -36,6 +36,7 @@ public class StudyActivity {
     private Integer maxParticipants;
     //Enum ActivityType. Тип мероприятия: программа, курс, мероприятие
     private String activityType;
+    private String location;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "activity_trajectory", joinColumns = {@JoinColumn(name = "study_activity_id")},
                 inverseJoinColumns = {@JoinColumn(name = "trajectory_id")}
@@ -53,6 +54,7 @@ public class StudyActivity {
                 ", participationPoint= " + participationPoint +
                 ", maxParticipants= " + maxParticipants +
                 ", activityType= " + activityType +
+                ", maxParticipants= " + location +
                 ", trajectories= " + trajectories +
                 "}";
     }

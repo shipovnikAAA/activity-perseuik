@@ -48,7 +48,7 @@ const RegisterPage = () => {
             <form onSubmit={handleSubmit(onSubmit)} className='mt-4 form-as'>
               <div>
                 <input
-                  {...register('secondName', {
+                  {...register('surname', {
                     required: true,
                     pattern: /^[А-Яа-я]+$/i,
                   })}
@@ -82,7 +82,7 @@ const RegisterPage = () => {
               </div>
               <div className='mt-3'>
                 <input
-                  {...register('lastName', {
+                  {...register('fatherName', {
                     required: true,
                     pattern: /^[А-Яа-я]+$/i,
                   })}
@@ -115,7 +115,7 @@ const RegisterPage = () => {
               </div>
               <div className='mt-3'>
                 <input
-                  {...register('school', {
+                  {...register('educationalOrganization', {
                     required: true,
                   })}
                   id='reg-school'
@@ -131,7 +131,7 @@ const RegisterPage = () => {
               </div>
               <div className='mt-3'>
                 <input
-                  {...register('schoolClass', {
+                  {...register('educationalClass', {
                     required: true,
                   })}
                   id='reg-class'

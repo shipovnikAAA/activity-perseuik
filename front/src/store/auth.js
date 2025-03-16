@@ -54,24 +54,24 @@ class AuthStore {
   }
 
   async register({
-    password,
-    name,
-    secondName,
-    lastName,
-    city,
-    schoolClass,
-    phoneNumber,
-    email,
+    'name':name,
+    'surname': surname,
+    'fatherName': fatherName,
+    'educationalOrganization': educationalOrganization,
+    'educationalClass': educationalClass,
+    'email': email,
+    'phoneNumber': phoneNumber,
+    'password': password,
   }) {
     await registerRequest({
-      password,
-      name,
-      secondName,
-      lastName,
-      city,
-      schoolClass,
-      phoneNumber,
-      email,
+      'name': name,
+      'surname': surname,
+      'fatherName': fatherName,
+      'educationalOrganization': educationalOrganization,
+      'educationalClass': educationalClass,
+      'email': email,
+      'phoneNumber': phoneNumber,
+      'password': password,
     });
 
     await this.login({

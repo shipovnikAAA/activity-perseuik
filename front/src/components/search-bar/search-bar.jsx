@@ -17,7 +17,7 @@ const SearchBar = () => {
         className='form-control'
         onChange={handleSearchChange}
         defaultValue=''
-        style={{ width: '90%' }} // Занимает оставшееся пространство
+        style={{ width: '90%' }}
       />
       <div className='input-group-prepend'>
         <span

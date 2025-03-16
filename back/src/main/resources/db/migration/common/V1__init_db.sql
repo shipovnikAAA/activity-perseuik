@@ -49,6 +49,7 @@ create table study_activity
     name                varchar(255),
     participation_point int4,
     start_date          varchar(255),
+    location          varchar(255),
     primary key (id)
 );
 

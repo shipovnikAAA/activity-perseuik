@@ -1,22 +1,60 @@
 .event-element {
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   display: flex;
+  // align-items: center;
+  // align-content: center;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+  border: 1px solid #646464a9;
+}
+
+.align {
   align-items: center;
   align-content: center;
-  background-color: #f0f0f0;
 }
 
 .event-picture {
   position: relative;
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   border-radius: 100%;
   background-color: #d9d9d9;
 }
 
 .event-name {
   vertical-align: middle;
+}
+
+.event-name-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-name-text {
+  font-weight: bold;
+  font-size:x-large;
+}
+
+.event-location-text {
+  font-weight: 400;
+  font-size: medium;
+}
+
+.event-date {
+  align-content: center;
+  justify-content: flex-end;
+  align-items: flex-start; 
+}
+
+.event-date-texts {
+  /* This div might not be necessary if event-date-text can handle the styling */  
+}
+
+.event-date-text {
+  font-weight: 400;
+  font-size: normal; /* or use a specific size like 18px, 20px, etc. */
 }
 
 .event-date {

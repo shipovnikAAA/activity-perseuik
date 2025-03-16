@@ -60,6 +60,7 @@ public class StudyActivityService {
                 .setParticipationPoint(studyActivity.getParticipationPoint())
                 .setMaxParticipants(studyActivity.getMaxParticipants())
                 .setActivityType(studyActivity.getActivityType())
+                .setLocation(studyActivity.getLocation())
                 .setTrajectories(studyActivity.getTrajectories());
         return studyActivityRepository.saveAndFlush(activityFromDB);
     }
