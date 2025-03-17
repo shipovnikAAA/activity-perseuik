@@ -14,6 +14,8 @@ const EventElement = ({
   const formattedDateStart = `${day1}.${month1}`;
   const [day2, month2] = event.endDate.split('-');
   const formattedDateEnd = `${day2}.${month2}`;
+  const colors = ['#FF3131', '#FEE636', '#31C7FF'];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
   return (
     <div className='event-element mb-4 row' onClick={() => showModalFunction(event)}>
       {/* {actionDescription} */}
@@ -26,7 +28,7 @@ const EventElement = ({
           <div className='event-location-text'>{event.location}</div>
         </div>
       </div>
-      <div className='event-date col'>
+      <div className='event-date col' style={{ backgroundColor: randomColor }}>
         <div className='event-date-text'>C {formattedDateStart} ПО {formattedDateEnd}</div>
       </div>
 

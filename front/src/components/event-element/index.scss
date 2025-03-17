@@ -46,6 +46,13 @@
   align-content: center;
   justify-content: flex-end;
   align-items: flex-start; 
+  background-color: #646464a9;
+  border-radius: 10px;
+  width: 20%;
+  margin: 20px;
+  margin-top: 10px !important;
+  padding: 10px;
+  height: 20%;
 }
 
 .event-date-texts {
@@ -54,6 +61,7 @@
 
 .event-date-text {
   font-weight: 400;
+  color: white;
   font-size: normal; /* or use a specific size like 18px, 20px, etc. */
 }
 
